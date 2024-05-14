@@ -43,7 +43,7 @@ def get_playlog_for_station(station_id):
     return  [
                 {
                     "seqNo": 1000,
-                    "file": "16450838_Wounded feat. Cara Melín_(Kristian Nairn Extended Remix).aiff",
+                    "file": "aiff",
                     "start": start_epoch_ms,
                     "stop": stop_epoch_ms,
                     "isUnderlay": False,
