@@ -1,4 +1,6 @@
 import json
+import time
+from datetime import datetime, timedelta
 
 def lambda_handler(event, context):
     # Print the entire event object for debugging
@@ -28,11 +30,26 @@ def lambda_handler(event, context):
 
 # Dummy function to simulate fetching playlog
 def get_playlog_for_station(station_id):
+    now = datetime.now()
+    # Calculate the start and stop times
+    start_time = now + timedelta(minutes=1)
+    stop_time = now + timedelta(minutes=2)
+    
+    # Convert datetime to epoch milliseconds
+    start_epoch_ms = int(start_time.timestamp() * 1000)
+    stop_epoch_ms = int(stop_time.timestamp() * 1000)
+
     # Replace this with your actual logic to fetch the playlog
-    return {
-        "stationId": station_id,
-        "playlog": [
-            {"song": "Song 1", "artist": "Artist 1"},
-            {"song": "Song 2", "artist": "Artist 2"}
-        ]
-    }
+    return  [
+                {
+                    "seqNo": 1000,
+                    "file": "16450838_Wounded feat. Cara Melín_(Kristian Nairn Extended Remix).aiff",
+                    "start": start_epoch_ms,
+                    "stop": stop_epoch_ms,
+                    "isUnderlay": False,
+                    "shouldDuckPrev": False,
+                    "canBeDucked": True,
+                    "speed": 1.0,
+                    "gain": 0.9
+                }
+            ]
