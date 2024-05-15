@@ -53,7 +53,7 @@ def get_playlog_for_station(station_id):
         return  [
                     {
                         "seqNo": 1000,
-                        "file": "aiff",
+                        "file": "16450838_Wounded feat. Cara Melín_(Kristian Nairn Extended Remix).aiff",
                         "start": start_epoch_ms,
                         "stop": stop_epoch_ms,
                         "isUnderlay": False,
@@ -76,7 +76,7 @@ def get_playlog_for_station(station_id):
         return  [
                     {
                         "seqNo": 2000,
-                        "file": "wave",
+                        "file": "17800302_Other Side of the World_(Extended Mix).aiff",
                         "start": start_epoch_ms,
                         "stop": stop_epoch_ms,
                         "isUnderlay": False,
