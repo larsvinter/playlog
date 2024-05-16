@@ -53,8 +53,19 @@ def get_playlog_for_station(station_id):
         return  [
                     {
                         "seqNo": 1000,
-                        "file": "16450838_Wounded feat. Cara Melín_(Kristian Nairn Extended Remix).aiff",
+                        "file": "(Song) The Power Station (Shout) Copenhagen FM.wav",
                         "start": start_epoch_ms,
+                        "stop": stop_epoch_ms,
+                        "isUnderlay": False,
+                        "shouldDuckPrev": True,
+                        "canBeDucked": True,
+                        "speed": 1.0,
+                        "gain": 0.9
+                    },
+                    {
+                        "seqNo": 1001,
+                        "file": "16450838_Wounded feat. Cara Melín_(Kristian Nairn Extended Remix).aiff",
+                        "start": start_epoch_ms + 5000,
                         "stop": stop_epoch_ms,
                         "isUnderlay": False,
                         "shouldDuckPrev": True,
