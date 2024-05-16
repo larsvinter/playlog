@@ -42,7 +42,7 @@ def get_playlog_for_station(station_id):
     
     if station_id == 101:
         # Calculate the start and stop times for station 101
-        start_time = now + timedelta(minutes=1)
+        start_time = now + timedelta(seconds=10)
         stop_time = now + timedelta(minutes=2)
         
         # Convert datetime to epoch milliseconds
@@ -72,6 +72,17 @@ def get_playlog_for_station(station_id):
                         "canBeDucked": True,
                         "speed": 1.0,
                         "gain": 0.9
+                    },
+                    {
+                        "seqNo": 1002,
+                        "file": "mark-speak.aif",
+                        "start": start_epoch_ms + 6000,
+                        "stop": stop_epoch_ms,
+                        "isUnderlay": False,
+                        "shouldDuckPrev": False,
+                        "canBeDucked": False,
+                        "speed": 1.0,
+                        "gain": 1.0
                     }
                 ]
     elif station_id == 102:
