@@ -73,7 +73,8 @@ def get_playlog_for_station(station_id):
                         "canBeDucked": True,
                         "speed": 1.0,
                         "gain": 0.9,
-                        "cue": 40000
+                        "cue": 40000,
+                        "katek": 100
                     },
                     {
                         "seqNo": 1002,
