@@ -95,10 +95,7 @@ def get_playlog_for_station(station_id):
                         "speed": 1.0,
                         "gain": 1.0,
                         "cue": 0,
-                        "volEnvelope": [
-                            { "pos": 10, "value": 40.2 },
-                            { "pos": 2000, "value": 50.2 }
-                        ]
+                        "volEnvelope": []
                     }
                 ]
     elif station_id == 102:
