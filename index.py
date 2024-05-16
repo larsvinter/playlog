@@ -80,7 +80,7 @@ def get_playlog_for_station(station_id):
                             { "pos": 800, "value": 1.0 },
                             { "pos": 1000, "value": 0.2 },
                             { "pos": 6000, "value": 0.2 },
-                            { "pos": 8500, "value": 1.0 },
+                            { "pos": 6500, "value": 1.0 },
                         ]
                     },
                     {
