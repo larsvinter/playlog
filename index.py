@@ -116,7 +116,7 @@ def get_playlog_for_station(station_id):
                         "isUnderlay": False,
                         "shouldDuckPrev": True,
                         "canBeDucked": True,
-                        "speed": 1.8,
+                        "speed": 1.0,
                         "gain": 0.9,
                         "cue": 100,
                         "volEnvelope": [
