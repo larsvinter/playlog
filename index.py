@@ -60,7 +60,8 @@ def get_playlog_for_station(station_id):
                         "shouldDuckPrev": True,
                         "canBeDucked": True,
                         "speed": 1.0,
-                        "gain": 0.9
+                        "gain": 0.9,
+                        "cue": 0
                     },
                     {
                         "seqNo": 1001,
@@ -71,7 +72,8 @@ def get_playlog_for_station(station_id):
                         "shouldDuckPrev": True,
                         "canBeDucked": True,
                         "speed": 1.0,
-                        "gain": 0.9
+                        "gain": 0.9,
+                        "cue": 40000
                     },
                     {
                         "seqNo": 1002,
@@ -82,7 +84,8 @@ def get_playlog_for_station(station_id):
                         "shouldDuckPrev": False,
                         "canBeDucked": False,
                         "speed": 1.0,
-                        "gain": 1.0
+                        "gain": 1.0,
+                        "cue": 0
                     }
                 ]
     elif station_id == 102:
