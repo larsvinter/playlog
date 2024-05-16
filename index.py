@@ -74,7 +74,11 @@ def get_playlog_for_station(station_id):
                         "speed": 1.0,
                         "gain": 0.9,
                         "cue": 40000,
-                        "katek": 100
+                        "katek": 100,
+                        "volEnvelope": [
+                            { "pos": 0, "value": 0 },
+                            { "pos": 2000, "value": 0 }
+                        ]
                     },
                     {
                         "seqNo": 1002,
@@ -109,7 +113,8 @@ def get_playlog_for_station(station_id):
                         "shouldDuckPrev": True,
                         "canBeDucked": True,
                         "speed": 1.8,
-                        "gain": 0.9
+                        "gain": 0.9,
+                        "cue": 100
                     }
                 ]
     else:
