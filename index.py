@@ -43,7 +43,7 @@ def get_playlog_for_station(station_id):
     if station_id == 101:
         # Calculate the start and stop times for station 101
         start_time = now + timedelta(seconds=10)
-        stop_time = now + timedelta(minutes=1)
+        stop_time = now + timedelta(minutes=2)
         
         # Convert datetime to epoch milliseconds
         start_epoch_ms = int(start_time.timestamp() * 1000)
@@ -120,8 +120,8 @@ def get_playlog_for_station(station_id):
                         "gain": 0.9,
                         "cue": 100,
                         "volEnvelope": [
-                            { "pos": 10, "value": 60.4 },
-                            { "pos": 2000, "value": 70.2 }
+                            { "pos": 10, "value": 0.9 },
+                            { "pos": 2000, "value": 0.9 }
                         ]
                     }
                 ]
