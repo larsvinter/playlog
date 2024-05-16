@@ -77,8 +77,11 @@ def get_playlog_for_station(station_id):
                         "cue": 40000,
                         "katek": 100,
                         "volEnvelope": [
-                            { "pos": 10, "value": 20.2 },
-                            { "pos": 2000, "value": 30.2 }
+                            { "pos": 0, "value": 1.0 },
+                            { "pos": 800, "value": 1.0 },
+                            { "pos": 1000, "value": 0.2 },
+                            { "pos": 6000, "value": 0.2 },
+                            { "pos": 6500, "value": 1.0 },
                         ]
                     },
                     {
