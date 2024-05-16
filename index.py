@@ -62,10 +62,7 @@ def get_playlog_for_station(station_id):
                         "speed": 1.0,
                         "gain": 0.9,
                         "cue": 0,
-                        "volEnvelope": [
-                            { "pos": 0, "value": 60.2 },
-                            { "pos": 2000, "value": 70.2 }
-                        ]
+                        "volEnvelope": []
                     },
                     {
                         "seqNo": 1001,
