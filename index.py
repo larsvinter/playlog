@@ -74,7 +74,7 @@ def get_playlog_for_station(station_id):
                         "canBeDucked": True,
                         "speed": 1.0,
                         "gain": 0.9,
-                        "cue": 40000,
+                        "cue": 0,
                         "katek": 100,
                         "volEnvelope": [
                             { "pos": 0, "value": 1.0 },
