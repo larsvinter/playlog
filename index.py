@@ -63,8 +63,8 @@ def get_playlog_for_station(station_id):
                         "gain": 0.9,
                         "cue": 0,
                         "volEnvelope": [
-                            { "pos": 0, "value": 0 },
-                            { "pos": 2000, "value": 0 }
+                            { "pos": 0, "value": 60.2 },
+                            { "pos": 2000, "value": 70.2 }
                         ]
                     },
                     {
@@ -80,8 +80,8 @@ def get_playlog_for_station(station_id):
                         "cue": 40000,
                         "katek": 100,
                         "volEnvelope": [
-                            { "pos": 0, "value": 0 },
-                            { "pos": 2000, "value": 0 }
+                            { "pos": 10, "value": 20.2 },
+                            { "pos": 2000, "value": 30.2 }
                         ]
                     },
                     {
@@ -96,8 +96,8 @@ def get_playlog_for_station(station_id):
                         "gain": 1.0,
                         "cue": 0,
                         "volEnvelope": [
-                            { "pos": 0, "value": 0 },
-                            { "pos": 2000, "value": 0 }
+                            { "pos": 10, "value": 40.2 },
+                            { "pos": 2000, "value": 50.2 }
                         ]
                     }
                 ]
@@ -124,8 +124,8 @@ def get_playlog_for_station(station_id):
                         "gain": 0.9,
                         "cue": 100,
                         "volEnvelope": [
-                            { "pos": 0, "value": 0 },
-                            { "pos": 2000, "value": 0 }
+                            { "pos": 10, "value": 60.4 },
+                            { "pos": 2000, "value": 70.2 }
                         ]
                     }
                 ]
