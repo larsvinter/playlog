@@ -79,14 +79,14 @@ def get_playlog_for_station(station_id):
                             { "pos": 0, "value": 1.0 },
                             { "pos": 800, "value": 1.0 },
                             { "pos": 1000, "value": 0.2 },
-                            { "pos": 6000, "value": 0.2 },
-                            { "pos": 6500, "value": 1.0 },
+                            { "pos": 30000, "value": 0.2 },
+                            { "pos": 30500, "value": 1.0 },
                         ]
                     },
                     {
                         "seqNo": 1002,
                         "file": "mark-speak.aif",
-                        "start": start_epoch_ms + 6000,
+                        "start": start_epoch_ms + 5500,
                         "stop": stop_epoch_ms,
                         "isUnderlay": False,
                         "shouldDuckPrev": False,
