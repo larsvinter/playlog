@@ -49,22 +49,40 @@ def get_playlog_for_station(station_id):
                     "time": start_epoch_ms,
                     "type": "file",
                     "data": {
-                        "path": "data/audio/amy.wav",
+                        "path": "data/audio/news.wav",
                         "sideChainType": "receive",
                         "vol": 1.0,
                         "speed": 1.0,
                         "begin": 0.0,
-                        "end": 38.000,
+                        "end": 61.000,
                         "envelope": [
                             { "pos": 0,      "val": 0 },
-                            { "pos": 0.2,    "val": 1 },
-                            { "pos": 34.875, "val": 1 },
-                            { "pos": 37.975, "val": 0 }
+                            { "pos": 0.1,    "val": 1 },
+                            { "pos": 60.875, "val": 1 },
+                            { "pos": 61.000, "val": 0 }
+                        ]
+                    }
+                },
+                {
+                    "uuid": "jkljaksf834jh1",
+                    "time": start_epoch_ms + 60 * 1000,
+                    "type": "file",
+                    "data": {
+                        "path": "data/audio/friday-opener.wav",
+                        "sideChainType": "receive",
+                        "vol": 1.0,
+                        "speed": 1.0,
+                        "begin": 0.0,
+                        "end": 17.000,
+                        "envelope": [
+                            { "pos": 0,      "val": 1 },
+                            { "pos": 16.0, "val": 1 },
+                            { "pos": 17.0, "val": 0 }
                         ]
                     }
                 }
             ],
-            "nextUpdate": start_epoch_ms + 1000 * 90
+            "nextUpdate": start_epoch_ms + 1000 * 240
         }
     else:
         # Return empty for any other station_id
