@@ -106,7 +106,7 @@ def get_playlog_for_station(station_id):
                     "data": {
                         "path": "data/audio/speak-1.wav",
                         "sideChainType": "trigger",
-                        "vol": 1.0,
+                        "vol": 0.9,
                         "speed": 1.0,
                         "begin": 0.0,
                         "end": 85.000,
@@ -157,7 +157,7 @@ def get_playlog_for_station(station_id):
                     "data": {
                         "path": "data/audio/speak-2.wav",
                         "sideChainType": "trigger",
-                        "vol": 1.0,
+                        "vol": 0.9,
                         "speed": 1.0,
                         "begin": 0.0,
                         "end": 120.000,
@@ -174,7 +174,7 @@ def get_playlog_for_station(station_id):
                     "data": {
                         "path": "data/audio/speak-3.wav",
                         "sideChainType": "trigger",
-                        "vol": 1.0,
+                        "vol": 0.9,
                         "speed": 1.0,
                         "begin": 0.0,
                         "end": 120.000,
