@@ -143,10 +143,11 @@ def get_playlog_for_station(station_id):
                         "vol": 1.1,
                         "speed": 1.0,
                         "begin": 0.0,
-                        "end": 120.000,
+                        "end": 155.000,
                         "envelope": [
                             { "pos": 0,      "val": 1 },
-                            { "pos": 120.0, "val": 1 },
+                            { "pos": 150.0, "val": 1 },
+                            { "pos": 153.0, "val": 0 },
                         ]
                     }
                 },
