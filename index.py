@@ -88,14 +88,14 @@ def get_playlog_for_station(station_id):
                     "data": {
                         "path": "data/audio/Bed 1 - The Pirate.aif",
                         "sideChainType": "receive",
-                        "vol": 0.8,
+                        "vol": 1.0,
                         "speed": 1.0,
                         "begin": 0.0,
                         "end": 85.000,
                         "envelope": [
                             { "pos": 0,      "val": 1 },
-                            { "pos": 84.438, "val": 1 },
-                            { "pos": 84.771, "val": 0 }
+                            { "pos": 15.407, "val": 1 },
+                            { "pos": 15.740, "val": 0 }
                         ]
                     }
                 },
@@ -157,6 +157,40 @@ def get_playlog_for_station(station_id):
                     "data": {
                         "path": "data/audio/speak-2.wav",
                         "sideChainType": "trigger",
+                        "vol": 1.0,
+                        "speed": 1.0,
+                        "begin": 0.0,
+                        "end": 120.000,
+                        "envelope": [
+                            { "pos": 0,      "val": 1 },
+                            { "pos": 120.0, "val": 1 },
+                        ]
+                    }
+                },
+                {
+                    "uuid": "jkljaksf834jh7",
+                    "time": start_epoch_ms + 90989,
+                    "type": "file",
+                    "data": {
+                        "path": "data/audio/speak-3.wav",
+                        "sideChainType": "trigger",
+                        "vol": 1.0,
+                        "speed": 1.0,
+                        "begin": 0.0,
+                        "end": 120.000,
+                        "envelope": [
+                            { "pos": 0,      "val": 1 },
+                            { "pos": 120.0, "val": 1 },
+                        ]
+                    }
+                },
+                {
+                    "uuid": "jkljaksf834jh8",
+                    "time": start_epoch_ms + 92377,
+                    "type": "file",
+                    "data": {
+                        "path": "data/audio/one-great.wav",
+                        "sideChainType": "receive",
                         "vol": 1.0,
                         "speed": 1.0,
                         "begin": 0.0,
