@@ -80,6 +80,92 @@ def get_playlog_for_station(station_id):
                             { "pos": 17.0, "val": 0 }
                         ]
                     }
+                },
+                {
+                    "uuid": "jkljaksf834jh2",
+                    "time": start_epoch_ms + 69031,
+                    "type": "file",
+                    "data": {
+                        "path": "data/audio/Bed 1 - The Pirate.aif",
+                        "sideChainType": "receive",
+                        "vol": 0.8,
+                        "speed": 1.0,
+                        "begin": 0.0,
+                        "end": 85.000,
+                        "envelope": [
+                            { "pos": 0,      "val": 1 },
+                            { "pos": 84.438, "val": 1 },
+                            { "pos": 84.771, "val": 0 }
+                        ]
+                    }
+                },
+                {
+                    "uuid": "jkljaksf834jh3",
+                    "time": start_epoch_ms + 71156,
+                    "type": "file",
+                    "data": {
+                        "path": "data/audio/speak-1.wav",
+                        "sideChainType": "trigger",
+                        "vol": 1.0,
+                        "speed": 1.0,
+                        "begin": 0.0,
+                        "end": 85.000,
+                        "envelope": [
+                            { "pos": 0,      "val": 1 },
+                            { "pos": 85.0, "val": 1 },
+                        ]
+                    }
+                },
+                {
+                    "uuid": "jkljaksf834jh4",
+                    "time": start_epoch_ms + 84414,
+                    "type": "file",
+                    "data": {
+                        "path": "data/audio/Excellent.wav",
+                        "sideChainType": "trigger",
+                        "vol": 1.0,
+                        "speed": 1.0,
+                        "begin": 0.0,
+                        "end": 20.000,
+                        "envelope": [
+                            { "pos": 0,      "val": 1 },
+                            { "pos": 20.0, "val": 1 },
+                        ]
+                    }
+                },
+                {
+                    "uuid": "jkljaksf834jh5",
+                    "time": start_epoch_ms + 84757,
+                    "type": "file",
+                    "data": {
+                        "path": "data/audio/Emma Hewitt - Hypnotized (Markus Schulz Remix).wav",
+                        "sideChainType": "receive",
+                        "vol": 1.0,
+                        "speed": 1.0,
+                        "begin": 0.0,
+                        "end": 120.000,
+                        "envelope": [
+                            { "pos": 0,      "val": 1 },
+                            { "pos": 120.0, "val": 1 },
+                        ]
+                    }
+                },
+                {
+                    "uuid": "jkljaksf834jh6",
+                    "time": start_epoch_ms + 85146,
+                    "type": "file",
+                    "data": {
+                        "path": "data/audio/speak-2.wav",
+                        "sideChainType": "trigger",
+                        "vol": 1.0,
+                        "speed": 1.0,
+                        "begin": 0.0,
+                        "end": 120.000,
+                        "envelope": [
+                            { "pos": 0,      "val": 1 },
+                            { "pos": 120.0, "val": 1 },
+                        ]
+                    }
                 }
             ],
             "nextUpdate": start_epoch_ms + 1000 * 240
