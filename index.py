@@ -7,125 +7,65 @@ def lambda_handler(event, context):
     print("Event: ", event)
     
     try:
-        # Extract the stationId from the path parameters
+        # Extract the stationId from the path parameters (as a string)
         station_id = event['pathParameters']['stationId']
         
-        # Convert station_id to integer for comparison
-        station_id = int(station_id)
-        
-        # Fetch the playlog for the given stationId
+        # Fetch the playlog for the given stationId (now as a string)
         playlog = get_playlog_for_station(station_id)
-        
+
         # Create a response object
         response = {
             "statusCode": 200,
             "body": json.dumps(playlog)
         }
+
     except KeyError as e:
         # Handle the case where the path parameter is missing
         response = {
             "statusCode": 400,
-            "body": json.dumps({"error": "Bad Request", "message": str(e)})
-        }
-    except ValueError as e:
-        # Handle the case where the stationId is not an integer
-        response = {
-            "statusCode": 400,
-            "body": json.dumps({"error": "Bad Request", "message": "Invalid stationId"})
+            "body": json.dumps({"error": "Bad Request", "message": f"Missing parameter: {str(e)}"})
         }
     
     return response
 
 # Dummy function to simulate fetching playlog
 def get_playlog_for_station(station_id):
+    """
+    station_id is now a string. We compare it to "KQLZ".
+    If you need to handle multiple string station IDs, you can expand this logic.
+    """
     now = datetime.now()
     
-    if station_id == 101:
-        # Calculate the start and stop times for station 101
+    # Compare as a string
+    if station_id == "KQLZ":
+        # Calculate the start and stop times 
         start_time = now + timedelta(seconds=10)
-        stop_time = now + timedelta(minutes=2)
-        
-        # Convert datetime to epoch milliseconds
         start_epoch_ms = int(start_time.timestamp() * 1000)
-        stop_epoch_ms = int(stop_time.timestamp() * 1000)
-
-        # Replace this with your actual logic to fetch the playlog
-        return  [
-                    {
-                        "seqNo": 1000,
-                        "file": "(Song) The Power Station (Shout) Copenhagen FM.wav",
-                        "start": start_epoch_ms,
-                        "stop": stop_epoch_ms,
-                        "isUnderlay": False,
-                        "shouldDuckPrev": True,
-                        "canBeDucked": True,
-                        "speed": 1.0,
-                        "gain": 0.9,
-                        "cue": 0,
-                        "volEnvelope": []
-                    },
-                    {
-                        "seqNo": 1001,
-                        "file": "16450838_Wounded feat. Cara Melín_(Kristian Nairn Extended Remix).aiff",
-                        "start": start_epoch_ms + 5000,
-                        "stop": stop_epoch_ms,
-                        "isUnderlay": False,
-                        "shouldDuckPrev": True,
-                        "canBeDucked": True,
-                        "speed": 1.0,
-                        "gain": 0.9,
-                        "cue": 0,
-                        "volEnvelope": [
-                            { "pos": 0, "value": 1.0 },
-                            { "pos": 800, "value": 1.0 },
-                            { "pos": 1000, "value": 0.2 },
-                            { "pos": 30000, "value": 0.2 },
-                            { "pos": 30500, "value": 1.0 },
-                        ]
-                    },
-                    {
-                        "seqNo": 1002,
-                        "file": "mark-speak.aif",
-                        "start": start_epoch_ms + 5500,
-                        "stop": stop_epoch_ms,
-                        "isUnderlay": False,
-                        "shouldDuckPrev": False,
-                        "canBeDucked": False,
-                        "speed": 1.0,
-                        "gain": 1.0,
-                        "cue": 0,
-                        "volEnvelope": []
-                    }
-                ]
-    elif station_id == 102:
-        # Calculate the start and stop times for station 102
-        start_time = now + timedelta(minutes=1)
-        stop_time = now + timedelta(minutes=2)
         
-        # Convert datetime to epoch milliseconds
-        start_epoch_ms = int(start_time.timestamp() * 1000)
-        stop_epoch_ms = int(stop_time.timestamp() * 1000)
-
-        # Replace this with your actual logic to fetch the playlog
-        return  [
-                    {
-                        "seqNo": 2000,
-                        "file": "17800302_Other Side of the World_(Extended Mix).aiff",
-                        "start": start_epoch_ms,
-                        "stop": stop_epoch_ms,
-                        "isUnderlay": False,
-                        "shouldDuckPrev": True,
-                        "canBeDucked": True,
+        return  { 
+            "items": [
+                {
+                    "uuid": "jkljaksf834jhk",
+                    "time": start_epoch_ms,
+                    "type": "file",
+                    "data": {
+                        "path": "",
+                        "sideChainType": "receive",
+                        "vol": 1.0,
                         "speed": 1.0,
-                        "gain": 0.9,
-                        "cue": 100,
-                        "volEnvelope": [
-                            { "pos": 10, "value": 0.9 },
-                            { "pos": 2000, "value": 0.9 }
+                        "begin": 0.0,
+                        "end": 38.000,
+                        "envelope": [
+                            { "pos": 0,      "val": 0 },
+                            { "pos": 0.2,    "val": 1 },
+                            { "pos": 34.875, "val": 1 },
+                            { "pos": 37.975, "val": 0 }
                         ]
                     }
-                ]
+                }
+            ],
+            "nextUpdate": start_epoch_ms + 1000 * 90
+        }
     else:
-        # Return an empty array for any other station_id
-        return []
-
+        # Return empty for any other station_id
+        return {}
