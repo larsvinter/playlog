@@ -49,7 +49,7 @@ def get_playlog_for_station(station_id):
                     "time": start_epoch_ms,
                     "type": "file",
                     "data": {
-                        "path": "",
+                        "path": "data/audio/amy.wav",
                         "sideChainType": "receive",
                         "vol": 1.0,
                         "speed": 1.0,
