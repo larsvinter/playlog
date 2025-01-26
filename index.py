@@ -140,7 +140,7 @@ def get_playlog_for_station(station_id):
                     "data": {
                         "path": "data/audio/Emma Hewitt - Hypnotized (Markus Schulz Remix).wav",
                         "sideChainType": "receive",
-                        "vol": 1.0,
+                        "vol": 1.2,
                         "speed": 1.0,
                         "begin": 0.0,
                         "end": 120.000,
