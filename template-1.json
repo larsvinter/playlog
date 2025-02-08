@@ -1,0 +1,32 @@
+{
+    "templateId": "1001",
+    "description": "Rachel Morgan's Weekend Kick-Off - for Fridays at 5pm-6pm",
+    "duration": 60000,
+    "fixedItems": [
+        {
+            "timeType": "fixed",
+            "timeType-1": "backtime",
+            "timeType-2": "flow",
+            "time": 0,
+            "itemId": [1],
+            "optional": false
+        },
+        {
+            "timeType": "fixed",
+            "time": 60000,
+            "itemId": [2],
+            "optional": false
+        },
+        {
+            "timeType": "flow",
+            "itemId": [3],
+            "optional": false
+        },
+        {
+            "timeType": "backtime",
+            "time": 3597000,
+            "itemId": [4],
+            "optional": false
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+[
+    {
+        "itemId": "1",
+        "type": "file",
+        "data": {
+            "path": "data/audio/news.wav",
+            "sideChainType": "neutral",
+            "vol": 1.0,
+            "speed": 1.0,
+            "begin": 0.0,
+            "end": 62.000,
+            "envelope": []
+        }
+    },
+    {
+        "itemId": "2",
+        "type": "file",
+        "data": {
+            "path": "data/audio/friday-5pm-opener.wav",
+            "sideChainType": "neutral",
+            "vol": 1.0,
+            "speed": 1.0,
+            "begin": 0.0,
+            "end": 19.000,
+            "envelope": []
+        }
+    },
+    {
+        "itemId": "3",
+        "type": "file",
+        "data": {
+            "path": "data/audio/friday-5pm-opener.wav",
+            "sideChainType": "neutral",
+            "vol": 1.0,
+            "speed": 1.0,
+            "begin": 0.0,
+            "end": 19.000,
+            "envelope": []
+        }
+    },
+    {
+        "itemId": "4",
+        "type": "segment",
+        "description": "top-of-the-hour-with-speak"
+    }
+]
