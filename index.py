@@ -137,7 +137,7 @@ def get_playlog_for_station(station_id):
                     "data": {
                         "path": "/mnt/s3bucket/items/531a834c-9714-42c2-800c-c1bff11b4215.wav",
                         "sideChainType": "receive",
-                        "vol": 1.27,
+                        "vol": 0.944,
                         "speed": 1.0,
                         "begin": 0.629,
                         "end": 193.473,
@@ -205,7 +205,7 @@ def get_playlog_for_station(station_id):
                     "data": {
                         "path": "/mnt/s3bucket/items/78c4d4cc-4835-4d1f-b2b9-daadffa01acb.wav",
                         "sideChainType": "receive",
-                        "vol": 1.45,
+                        "vol": 1.135,
                         "speed": 1.0,
                         "begin": 7.124,
                         "end": 100.473,
@@ -217,7 +217,7 @@ def get_playlog_for_station(station_id):
                     }
                 },
             ],
-            "nextUpdate": start_epoch_ms + 1000 * 360
+            "nextUpdate": start_epoch_ms + 1000 * 460
         }
     else:
         # Return empty for any other station_id
