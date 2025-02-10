@@ -139,7 +139,7 @@ def get_playlog_for_station(station_id):
                         "sideChainType": "receive",
                         "vol": 0.8,
                         "speed": 1.0,
-                        "begin": 2.2,
+                        "begin": 0.629,
                         "end": 155.000,
                         "envelope": [
                             { "pos": 0,      "val": 1 },
