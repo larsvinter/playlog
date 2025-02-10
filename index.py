@@ -131,11 +131,11 @@ def get_playlog_for_station(station_id):
                     }
                 },
                 {
-                    "uuid": "jkljaksf834jh5",
+                    "uuid": "jkljashf834jh5",
                     "time": start_epoch_ms + 84757,
                     "type": "file",
                     "data": {
-                        "path": "/mnt/s3bucket/items/78c4d4cc-4835-4d1f-b2b9-daadffa01acb.wav",
+                        "path": "/mnt/s3bucket/items/531a834c-9714-42c2-800c-c1bff11b4215.wav",
                         "sideChainType": "receive",
                         "vol": 0.8,
                         "speed": 1.0,
