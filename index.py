@@ -137,10 +137,10 @@ def get_playlog_for_station(station_id):
                     "data": {
                         "path": "/mnt/s3bucket/items/531a834c-9714-42c2-800c-c1bff11b4215.wav",
                         "sideChainType": "receive",
-                        "vol": 1.45,
+                        "vol": 1.27,
                         "speed": 1.0,
                         "begin": 0.629,
-                        "end": 155.000,
+                        "end": 193.473,
                         "envelope": [
                             { "pos": 0,      "val": 1 },
                             { "pos": 150.0, "val": 1 },
@@ -198,9 +198,27 @@ def get_playlog_for_station(station_id):
                             { "pos": 120.0, "val": 1 },
                         ]
                     }
-                }
+                },
+                {
+                    "uuid": "456g4df56g45fd6g",
+                    "time": start_epoch_ms + 85360 + 192844,
+                    "type": "file",
+                    "data": {
+                        "path": "/mnt/s3bucket/items/78c4d4cc-4835-4d1f-b2b9-daadffa01acb.wav",
+                        "sideChainType": "receive",
+                        "vol": 1.45,
+                        "speed": 1.0,
+                        "begin": 7.124,
+                        "end": 100.473,
+                        "envelope": [
+                            { "pos": 0,      "val": 1 },
+                            { "pos": 98.0, "val": 1 },
+                            { "pos": 100.0, "val": 0 },
+                        ]
+                    }
+                },
             ],
-            "nextUpdate": start_epoch_ms + 1000 * 240
+            "nextUpdate": start_epoch_ms + 1000 * 360
         }
     else:
         # Return empty for any other station_id
