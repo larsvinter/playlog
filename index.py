@@ -49,7 +49,7 @@ def get_playlog_for_station(station_id):
                     "time": start_epoch_ms,
                     "type": "file",
                     "data": {
-                        "path": "/mnt/s3bucket/uploads/ea1dd559-bb02-4abe-ac43-db7253f52019.wav",
+                        "path": "data/audio/news.wav",
                         "sideChainType": "receive",
                         "vol": 1.0,
                         "speed": 1.0,
