@@ -137,7 +137,7 @@ def get_playlog_for_station(station_id):
                     "data": {
                         "path": "/mnt/s3bucket/items/531a834c-9714-42c2-800c-c1bff11b4215.wav",
                         "sideChainType": "receive",
-                        "vol": 0.8,
+                        "vol": 1.45,
                         "speed": 1.0,
                         "begin": 0.629,
                         "end": 155.000,
