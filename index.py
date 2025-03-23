@@ -45,174 +45,97 @@ def get_playlog_for_station(station_id):
         return  { 
             "items": [
                 {
-                    "uuid": "12fgfdljaksf834jhk",
+                    "uuid": "jkljashf834jh5",
                     "time": start_epoch_ms,
                     "type": "file",
+                    "category": "music",
                     "data": {
-                        "path": "data/audio/news.wav",
+                        "artist": "Rihanna",
+                        "title": "Diamonds",
+                        "path": "/mnt/s3bucket/items/rihanna.wav",
+                        "waveformPath": "/mnt/s3bucket/items/rihanna.dat",
+                        "coverArtPath": "/mnt/s3bucket/items/rihanna.jpg",
                         "sideChainType": "receive",
-                        "vol": 1.0,
+                        "audioType": "main",
+                        "vol": 0.97,
                         "speed": 1.0,
-                        "begin": 0.0,
-                        "end": 61.000,
+                        "begin": 0.000,
+                        "end": 3 * 60 + 43,
                         "envelope": [
                             { "pos": 0,      "val": 0 },
-                            { "pos": 0.1,    "val": 1 },
-                            { "pos": 60.875, "val": 1 },
-                            { "pos": 61.000, "val": 0 }
-                        ]
-                    }
-                },
-                {
-                    "uuid": "jkljaksf834jh1",
-                    "time": start_epoch_ms + 60 * 1000,
-                    "type": "file",
-                    "data": {
-                        "path": "data/audio/friday-opener.wav",
-                        "sideChainType": "receive",
-                        "vol": 1.0,
-                        "speed": 1.0,
-                        "begin": 0.0,
-                        "end": 17.000,
-                        "envelope": [
                             { "pos": 0,      "val": 1 },
-                            { "pos": 16.0, "val": 1 },
-                            { "pos": 17.0, "val": 0 }
+                            { "pos": 3 * 60 + 41, "val": 1 },
+                            { "pos": 3 * 60 + 43, "val": 0 }
                         ]
                     }
                 },
                 {
-                    "uuid": "jkljaksf834jh2",
-                    "time": start_epoch_ms + 69031,
+                    "uuid": "jkljashf834jh6",
+                    "time": start_epoch_ms + 218993,
                     "type": "file",
+                    "category": "speak",
                     "data": {
-                        "path": "data/audio/Bed 1 - The Pirate.aif",
-                        "sideChainType": "receive",
-                        "vol": 1.0,
-                        "speed": 1.0,
-                        "begin": 0.0,
-                        "end": 85.000,
-                        "envelope": [
-                            { "pos": 0,      "val": 1 },
-                            { "pos": 15.407, "val": 1 },
-                            { "pos": 15.740, "val": 0 }
-                        ]
-                    }
-                },
-                {
-                    "uuid": "jkljaksf834jh3",
-                    "time": start_epoch_ms + 71156,
-                    "type": "file",
-                    "data": {
-                        "path": "data/audio/speak-1.wav",
+                        "host": "Rachal Morgan",
+                        "text": "That was Rihanna with Diamonds — did you know the song was actually written in just 14 minutes by Sia? Talk about a hit in record time! And now, switching gears to a 90s classic—Wilson Phillips with: Hold On...",
+                        "path": "/mnt/s3bucket/items/pvc_s54_sb79_se37_m2.wav",
+                        "waveformPath": "/mnt/s3bucket/items/pvc_s54_sb79_se37_m2.dat",
+                        "coverArtPath": "/mnt/s3bucket/items/rachel.jpg",
                         "sideChainType": "trigger",
-                        "vol": 0.9,
+                        "audioType": "overlay",
+                        "vol": 1.2,
                         "speed": 1.0,
-                        "begin": 0.0,
-                        "end": 85.000,
+                        "begin": 0.000,
+                        "end": 15,
                         "envelope": []
                     }
                 },
                 {
-                    "uuid": "jkljaksf834jh4",
-                    "time": start_epoch_ms + 84414,
+                    "uuid": "jkljashf834jh7",
+                    "time": start_epoch_ms + 219500,
                     "type": "file",
+                    "category": "music",
                     "data": {
-                        "path": "data/audio/Excellent.wav",
-                        "sideChainType": "trigger",
+                        "artist": "Wilson Phillips",
+                        "title": "Hold On",
+                        "path": "/mnt/s3bucket/items/wilson.wav",
+                        "waveformPath": "/mnt/s3bucket/items/wilson.dat",
+                        "coverArtPath": "/mnt/s3bucket/items/wilson.jpg",
+                        "sideChainType": "receive",
+                        "audioType": "main",
                         "vol": 1.0,
                         "speed": 1.0,
-                        "begin": 0.0,
-                        "end": 20.000,
+                        "begin": 0.000,
+                        "end": 3 * 60 + 5,
                         "envelope": [
+                            { "pos": 0,      "val": 0 },
                             { "pos": 0,      "val": 1 },
-                            { "pos": 20.0, "val": 1 },
+                            { "pos": 3 * 60, "val": 1 },
+                            { "pos": 3 * 60 + 3, "val": 0 }
                         ]
                     }
                 },
                 {
-                    "uuid": "jkljashf834jh5",
-                    "time": start_epoch_ms + 85360,
+                    "uuid": "jkljashf834jh7",
+                    "time": start_epoch_ms + 319500,
                     "type": "file",
+                    "category": "music",
                     "data": {
-                        "path": "/mnt/s3bucket/items/531a834c-9714-42c2-800c-c1bff11b4215.wav",
+                        "artist": "Avicii",
+                        "title": "Levels",
+                        "path": "/mnt/s3bucket/items/avicii.wav",
+                        "waveformPath": "/mnt/s3bucket/items/avicii.dat",
+                        "coverArtPath": "/mnt/s3bucket/items/avicii.jpg",
                         "sideChainType": "receive",
-                        "vol": 0.944,
-                        "speed": 1.0,
-                        "begin": 0.629,
-                        "end": 193.473,
-                        "envelope": [
-                            { "pos": 0,      "val": 1 },
-                            { "pos": 194.0, "val": 1 }
-                        ]
-                    }
-                },
-                {
-                    "uuid": "jkljaksf834jh6",
-                    "time": start_epoch_ms + 85146,
-                    "type": "file",
-                    "data": {
-                        "path": "data/audio/speak-2.wav",
-                        "sideChainType": "trigger",
-                        "vol": 0.9,
-                        "speed": 1.0,
-                        "begin": 0.0,
-                        "end": 120.000,
-                        "envelope": [
-                            { "pos": 0,      "val": 1 },
-                            { "pos": 120.0, "val": 1 },
-                        ]
-                    }
-                },
-                {
-                    "uuid": "jkljaksf834jh7",
-                    "time": start_epoch_ms + 90989,
-                    "type": "file",
-                    "data": {
-                        "path": "data/audio/speak-3.wav",
-                        "sideChainType": "trigger",
-                        "vol": 0.9,
-                        "speed": 1.0,
-                        "begin": 0.0,
-                        "end": 120.000,
-                        "envelope": [
-                            { "pos": 0,      "val": 1 },
-                            { "pos": 120.0, "val": 1 },
-                        ]
-                    }
-                },
-                {
-                    "uuid": "jkljaksf834jh8",
-                    "time": start_epoch_ms + 92377,
-                    "type": "file",
-                    "data": {
-                        "path": "data/audio/one-great.wav",
-                        "sideChainType": "receive",
+                        "audioType": "main",
                         "vol": 1.0,
                         "speed": 1.0,
-                        "begin": 0.0,
-                        "end": 120.000,
+                        "begin": 0.000,
+                        "end": 3 * 60 + 5,
                         "envelope": [
+                            { "pos": 0,      "val": 0 },
                             { "pos": 0,      "val": 1 },
-                            { "pos": 120.0, "val": 1 },
-                        ]
-                    }
-                },
-                {
-                    "uuid": "456g4df56g45fd6g",
-                    "time": start_epoch_ms + 85360 + 192844,
-                    "type": "file",
-                    "data": {
-                        "path": "/mnt/s3bucket/items/78c4d4cc-4835-4d1f-b2b9-daadffa01acb.wav",
-                        "sideChainType": "receive",
-                        "vol": 1.135,
-                        "speed": 1.0,
-                        "begin": 7.124,
-                        "end": 100.473,
-                        "envelope": [
-                            { "pos": 0,      "val": 1 },
-                            { "pos": 90.0, "val": 1 },
-                            { "pos": 92.0, "val": 0 },
+                            { "pos": 3 * 60, "val": 1 },
+                            { "pos": 3 * 60 + 3, "val": 0 }
                         ]
                     }
                 },
